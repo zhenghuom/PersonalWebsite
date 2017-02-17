@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['namespace'=>'Home'],function (){
+    Route::get('/','HomeController@index');
+    Route::get('/skill','HomeController@skill');
+    Route::get('/about','HomeController@about');
+    Route::get('/portfolio','HomeController@portfolio');
+    Route::get('/contact','HomeController@contact');
+});
