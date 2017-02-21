@@ -8,59 +8,7 @@
     <title>HuoMing</title>
     <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
     <script src="{{ URL::asset('js/app.js') }}"></script>
-
-    <!-- Fonts -->
-    {{--<link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">--}}
-   {{-- <script src="https://unpkg.com/vue/dist/vue.js"></script>--}}
-    <!-- Styles -->
-    <style>
-        .logo{
-            font-family: 'Berkshire Swash', cursive;
-            margin-top: 0px;
-            width: 56%;
-            font-size: 3.1em;
-            margin-bottom: 0;
-            color: #000;
-            font-weight: 100;
-        }
-        .search-bar input[type="submit"] {
-            background: url({{ URL::asset('img/search.png') }})no-repeat 0px 0px;
-            outline: none;
-            -webkit-appearance: none;
-            border: 0;
-            display: inline-block;
-            vertical-align: middle;
-            position: relative;
-            width: 24px;
-            height: 24px;
-            top: 0px;
-            left: 0px;
-            cursor: pointer;
-        }
-
-        .footer{
-            margin-top: 70px;
-        }
-        .copy {
-            background: #2c58ed;
-            padding: 2em 0;
-            text-align: center;
-            color: #fff;
-        }
-
-        .container-title span{
-            font-size: 2em;
-            border-bottom: 3px solid #666;
-            border-radius: 5px;
-        }
-        .about-grids{
-            margin-top: 4em
-        }
-        .about-grids img{
-            max-width: 100%;
-        }
-
-    </style>
+    <link rel="stylesheet" href="{{ URL::asset('css/home.css') }}">
 </head>
 <body>
 

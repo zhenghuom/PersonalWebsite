@@ -16,9 +16,29 @@ Route::get('/', function () {
 });
 
 Route::group(['namespace'=>'Home'],function (){
+
     Route::get('/','HomeController@index');
     Route::get('/skill','HomeController@skill');
     Route::get('/about','HomeController@about');
     Route::get('/portfolio','HomeController@portfolio');
     Route::get('/contact','HomeController@contact');
+
+});
+
+Route::group(['namespace'=>'Admin'],function (){
+    Route::get('/admin','IndexController@index');
+    Route::get('/admin/login','LoginController@index');
+    Route::get('/admin/register','LoginController@register');
+    Route::get('/admin/login/login','LoginController@login');
+    Route::get('/admin/index','IndexController@index');
+    Route::get('/admin/index/grids','IndexController@grids');
+    Route::get('/admin/index/graphs','IndexController@graphs');
+    Route::get('/admin/index/typography','IndexController@typography');
+    Route::get('/admin/index/inbox','IndexController@inbox');
+    Route::get('/admin/index/compose','IndexController@compose');
+    Route::get('/admin/index/forms','IndexController@forms');
+    Route::get('/admin/index/validation','IndexController@validation');
+    Route::get('/admin/index/basic_tables','IndexController@basic_tables');
+    Route::get('/admin/index/media','IndexController@media');
+    Route::get('/admin/index/widgets','IndexController@widgets');
 });
