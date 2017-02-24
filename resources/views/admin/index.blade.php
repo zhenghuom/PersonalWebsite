@@ -1,7 +1,13 @@
 @include('admin.header')
 
+
 <body>
+
 <div id="wrapper">
+	@section('content')
+		<example></example>
+	@endsection
+
      <!-- Navigation -->
         @include('admin.left')
 		<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
@@ -46,6 +52,16 @@
         	 </div>
         	<div class="clearfix"> </div>
       </div>
+			<div id="app">@{{ message }}</div>
+<script>
+	var vm = new Vue({
+		el:'#app',
+		data:{
+			message:'test15645',
+		}
+	});
+	console.log(1);
+</script>
       <div class="col_1">
 		    <div class="col-md-4 span_7">	
 		      <div class="cal1 cal_2"><div class="clndr"><div class="clndr-controls"><div class="clndr-control-button"><p class="clndr-previous-button">previous</p></div><div class="month">July 2015</div><div class="clndr-control-button rightalign"><p class="clndr-next-button">next</p></div></div><table class="clndr-table" border="0" cellspacing="0" cellpadding="0"><thead><tr class="header-days"><td class="header-day">S</td><td class="header-day">M</td><td class="header-day">T</td><td class="header-day">W</td><td class="header-day">T</td><td class="header-day">F</td><td class="header-day">S</td></tr></thead><tbody><tr><td class="day adjacent-month last-month calendar-day-2015-06-28"><div class="day-contents">28</div></td><td class="day adjacent-month last-month calendar-day-2015-06-29"><div class="day-contents">29</div></td><td class="day adjacent-month last-month calendar-day-2015-06-30"><div class="day-contents">30</div></td><td class="day calendar-day-2015-07-01"><div class="day-contents">1</div></td><td class="day calendar-day-2015-07-02"><div class="day-contents">2</div></td><td class="day calendar-day-2015-07-03"><div class="day-contents">3</div></td><td class="day calendar-day-2015-07-04"><div class="day-contents">4</div></td></tr><tr><td class="day calendar-day-2015-07-05"><div class="day-contents">5</div></td><td class="day calendar-day-2015-07-06"><div class="day-contents">6</div></td><td class="day calendar-day-2015-07-07"><div class="day-contents">7</div></td><td class="day calendar-day-2015-07-08"><div class="day-contents">8</div></td><td class="day calendar-day-2015-07-09"><div class="day-contents">9</div></td><td class="day calendar-day-2015-07-10"><div class="day-contents">10</div></td><td class="day calendar-day-2015-07-11"><div class="day-contents">11</div></td></tr><tr><td class="day calendar-day-2015-07-12"><div class="day-contents">12</div></td><td class="day calendar-day-2015-07-13"><div class="day-contents">13</div></td><td class="day calendar-day-2015-07-14"><div class="day-contents">14</div></td><td class="day calendar-day-2015-07-15"><div class="day-contents">15</div></td><td class="day calendar-day-2015-07-16"><div class="day-contents">16</div></td><td class="day calendar-day-2015-07-17"><div class="day-contents">17</div></td><td class="day calendar-day-2015-07-18"><div class="day-contents">18</div></td></tr><tr><td class="day calendar-day-2015-07-19"><div class="day-contents">19</div></td><td class="day calendar-day-2015-07-20"><div class="day-contents">20</div></td><td class="day calendar-day-2015-07-21"><div class="day-contents">21</div></td><td class="day calendar-day-2015-07-22"><div class="day-contents">22</div></td><td class="day calendar-day-2015-07-23"><div class="day-contents">23</div></td><td class="day calendar-day-2015-07-24"><div class="day-contents">24</div></td><td class="day calendar-day-2015-07-25"><div class="day-contents">25</div></td></tr><tr><td class="day calendar-day-2015-07-26"><div class="day-contents">26</div></td><td class="day calendar-day-2015-07-27"><div class="day-contents">27</div></td><td class="day calendar-day-2015-07-28"><div class="day-contents">28</div></td><td class="day calendar-day-2015-07-29"><div class="day-contents">29</div></td><td class="day calendar-day-2015-07-30"><div class="day-contents">30</div></td><td class="day calendar-day-2015-07-31"><div class="day-contents">31</div></td><td class="day adjacent-month next-month calendar-day-2015-08-01"><div class="day-contents">1</div></td></tr></tbody></table></div></div>
@@ -55,7 +71,7 @@
 		        <div class="scrollbar" id="style-2">
                    <div class="activity-row">
 	                 <div class="col-xs-1"><i class="fa fa-thumbs-up text-info icon_13"> </i>  </div>
-	                 <div class="col-xs-3 activity-img"><img src="{{URL::asset('img/admin/5.png')}}" class="img-responsive" alt=""/></div>
+	                 <div class="col-xs-3 activity-img"><img src="{{asset('img/admin/5.png')}}" class="img-responsive" alt=""/></div>
 	                 <div class="col-xs-8 activity-desc">
 	                 	<h5><a href="#">Lorem Ipsum</a> liked <a href="#">random</a></h5>
 	                    <p>Lorem Ipsum is simply dummy</p>
@@ -65,7 +81,7 @@
                     </div>
 	  			    <div class="activity-row">
 	                 <div class="col-xs-1"><i class="fa fa-comment text-info"></i> </div>
-	                 <div class="col-xs-3 activity-img"><img src="{{URL::asset('img/admin/3.png')}}" class="img-responsive" alt=""/></div>
+	                 <div class="col-xs-3 activity-img"><img src="{{asset('img/admin/3.png')}}" class="img-responsive" alt=""/></div>
 	                 <div class="col-xs-8 activity-desc">
 	                 	<h5><a href="#">simply random</a> liked <a href="#">passages</a></h5>
 	                    <p>Lorem Ipsum is simply dummy</p>
@@ -75,7 +91,7 @@
                     </div>
                     <div class="activity-row">
 	                 <div class="col-xs-1"><i class="fa fa-check text-info icon_11"></i></div>
-	                 <div class="col-xs-3 activity-img"><img src="{{URL::asset('img/admin/1.png')}}" class="img-responsive" alt=""/></div>
+	                 <div class="col-xs-3 activity-img"><img src="{{asset('img/admin/1.png')}}" class="img-responsive" alt=""/></div>
 	                 <div class="col-xs-8 activity-desc">
 	                 	<h5><a href="#">standard chunk</a> liked <a href="#">model</a></h5>
 	                    <p>Lorem Ipsum is simply dummy</p>
@@ -85,7 +101,7 @@
                     </div>
                     <div class="activity-row1">
 	                 <div class="col-xs-1"><i class="fa fa-user text-info icon_12"></i></div>
-	                 <div class="col-xs-3 activity-img"><img src="{{URL::asset('img/admin/4.png')}}" class="img-responsive" alt=""/></div>
+	                 <div class="col-xs-3 activity-img"><img src="{{asset('img/admin/4.png')}}" class="img-responsive" alt=""/></div>
 	                 <div class="col-xs-8 activity-desc">
 	                 	<h5><a href="#">perspiciatis</a> liked <a href="#">donating</a></h5>
 	                    <p>Lorem Ipsum is simply dummy</p>
@@ -118,11 +134,11 @@
 		<div class="col-md-6 col_4">
 		  <div class="map_container"><div id="vmap" style="width: 100%; height: 400px;"></div></div>
 		  <!----Calender -------->
-			<link rel="stylesheet" href="{{URL::asset('css/admin/clndr.css')}}" type="text/css" />
-			<script src="{{URL::asset('js/admin/underscore-min.js')}}" type="text/javascript"></script>
-			<script src= "{{URL::asset('js/admin/moment-2.2.1.js')}}" type="text/javascript"></script>
-			<script src="{{URL::asset('js/admin/clndr.js')}}" type="text/javascript"></script>
-			<script src="{{URL::asset('js/admin/site.js')}}" type="text/javascript"></script>
+			<link rel="stylesheet" href="{{mix('css/admin/clndr.css')}}" type="text/css" />
+			{{--<script src="{{mix('js/admin/underscore-min.js')}}" type="text/javascript"></script>
+			<script src= "{{mix('js/admin/moment-2.2.1.js')}}" type="text/javascript"></script>--}}
+			<script src="{{mix('js/admin/clndr.js')}}" type="text/javascript"></script>
+			<script src="{{mix('js/admin/site.js')}}" type="text/javascript"></script>
 			<!----End Calender -------->
 		</div>
 		<div class="col-md-6 col_5">
@@ -130,6 +146,8 @@
 		   <div id="chart"></div>
 	       <div id="slider"></div>
 <script>
+
+
 
 var seriesData = [ [], [], [], [], [] ];
 var random = new Rickshaw.Fixtures.RandomData(50);
@@ -182,12 +200,12 @@ var detail = new Rickshaw.Graph.HoverDetail({
 </script>
 </div>
 	      <!-- map -->
-<link href="{{URL::asset('css/admin/jqvmap.css')}}" rel='stylesheet' type='text/css' />
-<script src="{{URL::asset('js/admin/jquery.vmap.js')}}"></script>
-<script src="{{URL::asset('js/admin/jquery.vmap.sampledata.js')}}" type="text/javascript"></script>
-<script src="{{URL::asset('js/admin/jquery.vmap.world.js')}}" type="text/javascript"></script>
+<link href="{{mix('css/admin/jqvmap.css')}}" rel='stylesheet' type='text/css' />
+{{--<script src="{{mix('js/admin/jquery.vmap.js')}}"></script>--}}
+<script src="{{mix('js/admin/jquery.vmap.sampledata.js')}}" type="text/javascript"></script>
+{{--<script src="{{mix('js/admin/jquery.vmap.world.js')}}" type="text/javascript"></script>--}}
 <script type="text/javascript">
-	jQuery(document).ready(function() {
+	$(document).ready(function() {
 		jQuery('#vmap').vectorMap({
 		    map: 'world_en',
 		    backgroundColor: '#333333',

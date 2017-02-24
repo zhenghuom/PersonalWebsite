@@ -8,18 +8,18 @@
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
  <!-- Bootstrap Core CSS -->
-<link href="{{URL::asset('css/app.css')}}" rel='stylesheet' type='text/css' />
+<link href="{{mix('css/app.css')}}" rel='stylesheet' type='text/css' />
 <!-- Custom CSS -->
-<link href="{{URL::asset('css/admin/style.css')}}" rel='stylesheet' type='text/css' />
-<link href="{{URL::asset('css/admin/font-awesome.css')}}" rel="stylesheet">
+<link href="{{mix('css/admin/style.css')}}" rel='stylesheet' type='text/css' />
+<link href="{{mix('css/admin/font-awesome.css')}}" rel="stylesheet">
 <!-- jQuery -->
-<script src="{{URL::asset('js/app.js')}}"></script>
+<script src="{{mix('js/app.js')}}"></script>
 
 
 </head>
 <body id="login">
   <div class="login-logo">
-    <a href="index.html"><img src="{{URL::asset('img/admin/logo.png')}}" alt=""/></a>
+    <a href="index.html"><img src="{{asset('img/admin/logo.png')}}" alt=""/></a>
   </div>
   <h2 class="form-heading">login</h2>
   <div class="app-cam">

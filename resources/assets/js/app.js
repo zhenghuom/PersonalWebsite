@@ -6,6 +6,8 @@
  */
 
 require('./bootstrap');
+require('./admin/jquery.vmap');
+require('./admin/jquery.vmap.world');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -15,6 +17,9 @@ require('./bootstrap');
 
 Vue.component('example', require('./components/Example.vue'));
 
-const app = new Vue({
-    el: '#app'
-});
+/*const app = new Vue({
+    el: '#app',
+    data:{
+        message:'hha'
+    }
+});*/

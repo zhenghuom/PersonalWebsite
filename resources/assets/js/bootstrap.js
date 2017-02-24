@@ -27,10 +27,10 @@ window.Vue = require('vue');
 
 window.axios = require('axios');
 
-window.axios.defaults.headers.common = {
+/*window.axios.defaults.headers.common = {
     'X-CSRF-TOKEN': window.Laravel.csrfToken,
     'X-Requested-With': 'XMLHttpRequest'
-};
+}*/;
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
@@ -44,3 +44,6 @@ window.axios.defaults.headers.common = {
 //     broadcaster: 'pusher',
 //     key: 'your-pusher-key'
 // });
+
+require('moment');
+require('underscore');

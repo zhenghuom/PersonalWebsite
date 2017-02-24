@@ -1,0 +1,17 @@
+{
+  "/js/app.js": "/js/app.js",
+  "/css/admin/style.css": "/css/admin/style.css",
+  "/css/admin/font-awesome.css": "/css/admin/font-awesome.css",
+  "/css/admin/clndr.css": "/css/admin/clndr.css",
+  "/css/admin/custom.css": "/css/admin/custom.css",
+  "/css/admin/jqvmap.css": "/css/admin/jqvmap.css",
+  "/css/admin/lines.css": "/css/admin/lines.css",
+  "/css/app.css": "/css/app.css",
+  "/js/admin/site.js": "/js/admin/site.js",
+  "/js/admin/metisMenu.js": "/js/admin/metisMenu.js",
+  "/js/admin/custom.js": "/js/admin/custom.js",
+  "/js/admin/clndr.js": "/js/admin/clndr.js",
+  "/js/admin/jquery.vmap.sampledata.js": "/js/admin/jquery.vmap.sampledata.js",
+  "/js/admin/d3.v3.js": "/js/admin/d3.v3.js",
+  "/js/admin/Chart.js": "/js/admin/Chart.js"
+}

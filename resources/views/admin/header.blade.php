@@ -7,24 +7,27 @@
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- Bootstrap Core CSS -->
-    <link href="{{URL::asset('css/app.css')}}" rel='stylesheet' type='text/css' />
+    {{--<script src="{{ asset("js/app.js") }}"></script>--}}
+    <script src="{{ mix("js/app.js") }}"></script>
+
+    <link href="{{mix('css/app.css')}}" rel='stylesheet' type='text/css' />
     <!-- Custom CSS -->
-    <link href="{{URL::asset('css/admin/style.css')}}" rel='stylesheet' type='text/css' />
-    <link href="{{URL::asset('css/admin/font-awesome.css')}}" rel="stylesheet">
+    <link href="{{mix('css/admin/style.css')}}" rel='stylesheet' type='text/css' />
+    <link href="{{mix('css/admin/font-awesome.css')}}" rel="stylesheet">
     <!-- Graph CSS -->
-    <link href="{{URL::asset('css/admin/lines.css')}}" rel='stylesheet' type='text/css' />
+    <link href="{{mix('css/admin/lines.css')}}" rel='stylesheet' type='text/css' />
     <!-- jQuery -->
-    <script src="{{URL::asset('js/app.js')}}"></script>
     <!----webfonts--->
 
     <!---//webfonts--->
     <!-- Nav CSS -->
-    <link href="{{URL::asset('css/admin/custom.css')}}" rel="stylesheet">
+    <link href="{{mix('css/admin/custom.css')}}" rel="stylesheet">
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="{{URL::asset('js/admin/metisMenu.min.js')}}"></script>
-    <script src="{{URL::asset('js/admin/custom.js')}}"></script>
+    <script src="{{mix('js/admin/metisMenu.js')}}"></script>
+    <script src="{{mix('js/admin/custom.js')}}"></script>
+
     <!-- Graph JavaScript -->
-    <script src="{{URL::asset('js/admin/d3.v3.js')}}"></script>
-    <script src="{{URL::asset('js/admin/rickshaw.js')}}"></script>
-    <script src="{{URL::asset('js/admin/Chart.js')}}"></script>
+    <script src="{{mix('js/admin/d3.v3.js')}}"></script>
+    <script src="{{asset('js/admin/rickshaw.js')}}"></script>
+    <script src="{{mix('js/admin/Chart.js')}}"></script>
 </head>

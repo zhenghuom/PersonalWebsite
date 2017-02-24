@@ -23,7 +23,7 @@
                 </li>
                 <li class="avatar">
                     <a href="#">
-                        <img src="{{URL::asset('img/admin/1.png')}}" alt=""/>
+                        <img src="{{asset('img/admin/1.png')}}" alt=""/>
                         <div>New message</div>
                         <small>1 minute ago</small>
                         <span class="label label-info">NEW</span>
@@ -31,7 +31,7 @@
                 </li>
                 <li class="avatar">
                     <a href="#">
-                        <img src="{{URL::asset('img/admin/2.png')}}" alt=""/>
+                        <img src="{{asset('img/admin/2.png')}}" alt=""/>
                         <div>New message</div>
                         <small>1 minute ago</small>
                         <span class="label label-info">NEW</span>
@@ -39,28 +39,28 @@
                 </li>
                 <li class="avatar">
                     <a href="#">
-                        <img src="{{URL::asset('img/admin/3.png')}}" alt=""/>
+                        <img src="{{asset('img/admin/3.png')}}" alt=""/>
                         <div>New message</div>
                         <small>1 minute ago</small>
                     </a>
                 </li>
                 <li class="avatar">
                     <a href="#">
-                        <img src="{{URL::asset('img/admin/4.png')}}" alt=""/>
+                        <img src="{{asset('img/admin/4.png')}}" alt=""/>
                         <div>New message</div>
                         <small>1 minute ago</small>
                     </a>
                 </li>
                 <li class="avatar">
                     <a href="#">
-                        <img src="{{URL::asset('img/admin/5.png')}}" alt=""/>
+                        <img src="{{asset('img/admin/5.png')}}" alt=""/>
                         <div>New message</div>
                         <small>1 minute ago</small>
                     </a>
                 </li>
                 <li class="avatar">
                     <a href="#">
-                        <img src="{{URL::asset('img/admin/pic1.png')}}" alt=""/>
+                        <img src="{{asset('img/admin/pic1.png')}}" alt=""/>
                         <div>New message</div>
                         <small>1 minute ago</small>
                     </a>
@@ -71,7 +71,7 @@
             </ul>
         </li>
         <li class="dropdown">
-            <a href="#" class="dropdown-toggle avatar" data-toggle="dropdown"><img src="{{URL::asset('img/admin/1.png')}}"><span class="badge">9</span></a>
+            <a href="#" class="dropdown-toggle avatar" data-toggle="dropdown"><img src="{{asset('img/admin/1.png')}}"><span class="badge">9</span></a>
             <ul class="dropdown-menu">
                 <li class="dropdown-menu-header text-center">
                     <strong>Account</strong>
