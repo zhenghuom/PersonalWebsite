@@ -34,6 +34,7 @@
 			</div></div>
 			<div class="clearfix"> </div>
 		</div>
+			<script src="{{mix('js/admin/Chart.js')}}"></script>
     <script>
 
 		var doughnutData = [

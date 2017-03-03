@@ -41,4 +41,10 @@ Route::group(['namespace'=>'Admin'],function (){
     Route::get('/admin/index/basic_tables','IndexController@basic_tables');
     Route::get('/admin/index/media','IndexController@media');
     Route::get('/admin/index/widgets','IndexController@widgets');
+    Route::get('/admin/menu/getMenu','MenuController@getMenu');
+    Route::post('/admin/menu/getMenu','MenuController@getMenu');
+    Route::get('/admin/menu/index','MenuController@index');
+    Route::post('/admin/menu/editMenu','MenuController@editMenu');
+    Route::post('/admin/menu/addMenu','MenuController@addMenu');
+    Route::post('/admin/menu/delMenu','MenuController@delMenu');
 });

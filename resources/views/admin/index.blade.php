@@ -4,9 +4,6 @@
 <body>
 
 <div id="wrapper">
-	@section('content')
-		<example></example>
-	@endsection
 
      <!-- Navigation -->
         @include('admin.left')
@@ -52,15 +49,9 @@
         	 </div>
         	<div class="clearfix"> </div>
       </div>
-			<div id="app">@{{ message }}</div>
 <script>
-	var vm = new Vue({
-		el:'#app',
-		data:{
-			message:'test15645',
-		}
-	});
-	console.log(1);
+
+
 </script>
       <div class="col_1">
 		    <div class="col-md-4 span_7">	
@@ -132,11 +123,9 @@
 	  </div>
 	  <div class="span_11">
 		<div class="col-md-6 col_4">
-		  <div class="map_container"><div id="vmap" style="width: 100%; height: 400px;"></div></div>
+		 </div>
 		  <!----Calender -------->
 			<link rel="stylesheet" href="{{mix('css/admin/clndr.css')}}" type="text/css" />
-			{{--<script src="{{mix('js/admin/underscore-min.js')}}" type="text/javascript"></script>
-			<script src= "{{mix('js/admin/moment-2.2.1.js')}}" type="text/javascript"></script>--}}
 			<script src="{{mix('js/admin/clndr.js')}}" type="text/javascript"></script>
 			<script src="{{mix('js/admin/site.js')}}" type="text/javascript"></script>
 			<!----End Calender -------->
@@ -145,11 +134,14 @@
 		  <div id="chart_container">
 		   <div id="chart"></div>
 	       <div id="slider"></div>
+			  <!-- Graph JavaScript -->
+			  {{--<script src="{{mix('js/admin/d3.v3.js')}}"></script>
+			  <script src="{{mix('js/admin/rickshaw.js')}}"></script>--}}
 <script>
 
 
 
-var seriesData = [ [], [], [], [], [] ];
+/*var seriesData = [ [], [], [], [], [] ];
 var random = new Rickshaw.Fixtures.RandomData(50);
 
 for (var i = 0; i < 75; i++) {
@@ -196,31 +188,10 @@ graph.render();
 
 var detail = new Rickshaw.Graph.HoverDetail({
 	graph: graph
-});
+});*/
 </script>
 </div>
-	      <!-- map -->
-<link href="{{mix('css/admin/jqvmap.css')}}" rel='stylesheet' type='text/css' />
-{{--<script src="{{mix('js/admin/jquery.vmap.js')}}"></script>--}}
-<script src="{{mix('js/admin/jquery.vmap.sampledata.js')}}" type="text/javascript"></script>
-{{--<script src="{{mix('js/admin/jquery.vmap.world.js')}}" type="text/javascript"></script>--}}
-<script type="text/javascript">
-	$(document).ready(function() {
-		jQuery('#vmap').vectorMap({
-		    map: 'world_en',
-		    backgroundColor: '#333333',
-		    color: '#ffffff',
-		    hoverOpacity: 0.7,
-		    selectedColor: '#666666',
-		    enableZoom: true,
-		    showTooltip: true,
-		    values: sample_data,
-		    scaleColors: ['#C8EEFF', '#006491'],
-		    normalizeFunction: 'polynomial'
-		});
-	});
-</script>
-<!-- //map -->
+
        </div>
        <div class="clearfix"> </div>
     </div>

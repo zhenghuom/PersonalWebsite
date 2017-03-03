@@ -100,80 +100,183 @@
         <div class="sidebar-nav navbar-collapse">
             <ul class="nav" id="side-menu">
                 <li>
-                    <a href="/admin"><i class="fa fa-dashboard fa-fw nav_icon"></i>Dashboard</a>
+                    <div class="panel  panel-success">
+                        <div class="panel-heading">
+                            <a href="/admin"><i class="fa fa-dashboard fa-fw nav_icon"></i>Dashboard</a>
+                        </div>
+                   </div>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-laptop nav_icon"></i>Layouts<span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li>
-                            <a href="/admin/index/grids">Grid System</a>
-                        </li>
-                    </ul>
+                    <div class="panel  panel-success">
+                        <div class="panel-heading">
+                            <a href="#collapseOne" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-laptop nav_icon"></i>Layouts<span class="fa arrow"></span></a>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse">
+                            <ul class="nav nav-second-level panel-body">
+                                <li>
+                                    <a href="/admin/index/grids">Grid System</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="panel  panel-success">
+                        <div class="panel-heading">
+                            <a href="#collapseTwo" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-indent nav_icon"></i>Menu Levels<span class="fa arrow"></span></a>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <ul class="nav nav-second-level panel-body">
+                                <li>
+                                    <a href="/admin/index/graphs">Graphs</a>
+                                </li>
+                                <li>
+                                    <a href="/admin/index/typography">Typography</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <!-- /.nav-second-level -->
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-indent nav_icon"></i>Menu Levels<span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li>
-                            <a href="/admin/index/graphs">Graphs</a>
-                        </li>
-                        <li>
-                            <a href="/admin/index/typography">Typography</a>
-                        </li>
-                    </ul>
+                    <div class="panel  panel-success">
+                        <div class="panel-heading">
+                            <a href="#collapseThree" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-envelope nav_icon"></i>Mailbox<span class="fa arrow"></span></a>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <ul class="nav nav-second-level panel-body">
+                                <li>
+                                    <a href="/admin/index/inbox">Inbox</a>
+                                </li>
+                                <li>
+                                    <a href="/admin/index/compose">Compose email</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <!-- /.nav-second-level -->
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-envelope nav_icon"></i>Mailbox<span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li>
-                            <a href="/admin/index/inbox">Inbox</a>
-                        </li>
-                        <li>
-                            <a href="/admin/index/compose">Compose email</a>
-                        </li>
-                    </ul>
+                    <div class="panel  panel-success">
+                        <div class="panel-heading">
+                            <a href="/admin/index/widgets"><i class="fa fa-flask nav_icon"></i>Widgets</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="panel  panel-success">
+                        <div class="panel-heading">
+                            <a href="#collapseFour" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-check-square-o nav_icon"></i>Forms<span class="fa arrow"></span></a>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse">
+                            <ul class="nav nav-second-level panel-body">
+                                <li>
+                                    <a href="/admin/index/forms">Basic Forms</a>
+                                </li>
+                                <li>
+                                    <a href="/admin/index/validation">Validation</a>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
                     <!-- /.nav-second-level -->
                 </li>
                 <li>
-                    <a href="/admin/index/widgets"><i class="fa fa-flask nav_icon"></i>Widgets</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-check-square-o nav_icon"></i>Forms<span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li>
-                            <a href="/admin/index/forms">Basic Forms</a>
-                        </li>
-                        <li>
-                            <a href="/admin/index/validation">Validation</a>
-                        </li>
-                    </ul>
+                    <div class="panel  panel-success">
+                        <div class="panel-heading">
+                            <a href="#collapseFive" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-table nav_icon"></i>Tables<span class="fa arrow"></span></a>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse">
+                            <ul class="nav nav-second-level panel-body">
+                                <li>
+                                    <a href="/admin/index/basic_tables">Basic Tables</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <!-- /.nav-second-level -->
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-table nav_icon"></i>Tables<span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li>
-                            <a href="/admin/index/basic_tables">Basic Tables</a>
-                        </li>
-                    </ul>
+                    <div class="panel  panel-success">
+                        <div class="panel-heading">
+                            <a href="#collapseSix" data-toggle="collapse" data-parent="#accordion" ><i class="fa fa-sitemap fa-fw nav_icon"></i>Css<span class="fa arrow"></span></a>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse">
+                            <ul class="nav nav-second-level panel-body">
+                                <li>
+                                    <a href="/admin/index/media">Media</a>
+                                </li>
+                                <li>
+                                    <a href="/admin/login">Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <!-- /.nav-second-level -->
                 </li>
-                <li>
-                    <a href="#"><i class="fa fa-sitemap fa-fw nav_icon"></i>Css<span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li>
-                            <a href="/admin/index/media">Media</a>
-                        </li>
-                        <li>
-                            <a href="/admin/login">Login</a>
+                <li v-for="item in items">
+                    <div class="panel  panel-success">
+                        <div class="panel-heading">
+                            <a v-bind:href ="item.url" v-if="item.childer == false">
+                        <i class="fa nav_icon fa-sitemap"></i>@{{item.name}}</a>
+                        <a v-bind:href ="item.collapse " data-toggle="collapse" data-parent="#accordion"  v-else>
+                            <i class="fa nav_icon fa-sitemap"></i>@{{item.name}}<span class="fa arrow"></span></a>
+                        </div>
+                        <div v-bind:id="item.collapseId" class="panel-collapse collapse">
+                            <ul class="nav nav-second-level panel-body">
+                        <li v-for="childer in item.childer">
+                            <a v-bind:href="childer.url"> @{{childer.name}}</a>
                         </li>
                     </ul>
-                    <!-- /.nav-second-level -->
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
         <!-- /.sidebar-collapse -->
     </div>
     <!-- /.navbar-static-side -->
+    {{--<script src="{{mix('js/admin/metisMenu.js')}}"></script>--}}
+<style>
+    .panel{
+        margin-bottom: 0px;
+    }
+</style>
+    <script>
+        $(function () {
+
+        });
+        var list = [];
+        function init() {
+            $.ajax({
+                url: '/admin/menu/getMenu',
+                type: 'post',
+                dataType: 'json',
+                success: function (data) {
+                    if(data.status == 0){
+                        list = data.list;
+                        for(var i in list){
+                            if(list[i].parent_id == 0){
+                                $('#collapse' + list[i].id).collapse('hide');
+                            }
+                            list[i]['collapse'] = '#collapse' + list[i].id;
+                            list[i]['collapseId'] = 'collapse' + list[i].id;
+                        }
+
+                        var vm = new Vue({
+                            el: '#side-menu',
+                            data:{
+                                items:list
+                            }
+                        });
+
+                        /*console.log(data.list);*/
+                    }
+                }
+
+            });
+        }
+        init();
+
+    </script>
 </nav>

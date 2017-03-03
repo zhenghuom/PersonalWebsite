@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>HuoMing</title>
-    <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
-    <script src="{{ URL::asset('js/app.js') }}"></script>
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <script src="{{ mix('js/app.js') }}"></script>
 
-    <link rel="stylesheet" href="{{ URL::asset('css/home.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/home.css') }}">
 </head>
 <body>
 

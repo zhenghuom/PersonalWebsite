@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>HuoMing</title>
-    <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
-    <script src="{{ URL::asset('js/app.js') }}"></script>
-    <link rel="stylesheet" href="{{ URL::asset('css/home.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <script src="{{ mix('js/app.js') }}"></script>
+    <link rel="stylesheet" href="{{ mix('css/home.css') }}">
 
 </head>
 <body>
@@ -77,9 +77,9 @@
             </div>
             <!-- 轮播（Carousel）导航 -->
             <a class="carousel-control left" href="#myCarousel"
-               data-slide="prev" style="padding-top: 45%">&lsaquo;</a>
+               data-slide="prev" style="padding-top: 30%">&lsaquo;</a>
             <a class="carousel-control right" href="#myCarousel"
-               data-slide="next" style="padding-top: 45%">&rsaquo;</a>
+               data-slide="next" style="padding-top: 30%">&rsaquo;</a>
         </div>
     </div>
 

@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "./";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 171);
+/******/ 	return __webpack_require__(__webpack_require__.s = 187);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -10296,7 +10296,7 @@ return jQuery;
 
 /***/ }),
 
-/***/ 126:
+/***/ 133:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {// call this from the developer console and you can control both instances
@@ -10389,10 +10389,10 @@ $(document).ready(function () {
 
 /***/ }),
 
-/***/ 171:
+/***/ 187:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(126);
+module.exports = __webpack_require__(133);
 
 
 /***/ })

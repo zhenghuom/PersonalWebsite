@@ -46,4 +46,5 @@ window.axios = require('axios');
 // });
 
 require('moment');
+require('sweetalert');
 require('underscore');
